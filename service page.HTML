@@ -1,0 +1,191 @@
+﻿<HTML>
+<TITLE>
+Our Service
+</TITLE>
+<STYLE>
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Accordion container */
+.accordion {
+  width: 100%;
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+
+/* Accordion items */
+.accordion-item {
+  background-color: #f2f2f2;
+  color: #444;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the button if it is clicked on (active) */
+.accordion-item.active, .accordion-item:hover {
+  background-color: pink;
+}
+
+/* Accordion content */
+.accordion-content {
+  padding: 0 1rem;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Style the accordion section title */
+.accordion-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+text-align: right;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+</STYLE>
+<SCRIPT>
+// JavaScript for handling accordion behavior
+document.addEventListener('DOMContentLoaded', function () {
+  var acc = document.getElementsByClassName('accordion-item');
+  for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+      var panel = this.nextElementSibling;
+      if (panel.style.display === 'block') {
+        panel.style.display = 'none';
+      } else {
+        panel.style.display = 'block';
+      }
+    });
+  }
+});
+</SCRIPT>
+<BODY bgcolor="azure"><br><br>
+<h1><center><strong><b><u><font size="10%">Our Services</font size></u></b></strong></center></h1><br><br><br><br>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="service%20page.HTML"><b>Services</b></a></li>
+                <li><a href="Aboutpage.html"><b>About</b></a></li>
+             </ul>
+        </nav>
+    </header>
+<br><br><br><br>
+
+<center>
+<img src="Manicure-vs-Pedicure-Urban-Company.jpg" height="70%" width="50%">
+</center><br><br>
+
+<!-- HTML structure for the accordion -->
+<div class="accordion">
+  <button class="accordion-item"><strong><b>Hair Styling</b></strong></button>
+  <div class="accordion-content"><br>
+    <h3>Haircut</h3>
+          <h5>Price: 399</h5>
+    <h3>Blowout</h3>
+          <h5>Price: 2,199</h5>
+    <h3>Coloring</h3>
+          <h5>Price: 700</h5>
+    <h3>Hair Extensions</h3>
+          <h5>Price: 1,299</h5>
+    <h3>Hair Straightening or Curling</h3>
+          <h5>Price: 2,999</h5>
+  </div><br><br>
+
+  <button class="accordion-item"><strong><b>Facial Treatment</b></strong></button>
+  <div class="accordion-content"><br>
+    <h3>Basic Facial</h3>
+	<h5>Price: 599</h5>
+    <h3>Acne Facial</h3>
+	<h5>Price: 999</h5>
+    <h3>Anti-Aging Facial</h3>
+	<h5>Price: 1,499</h5>
+    <h3>Hydrating Facial</h3>
+	<h5>Price: 2,500</h5>
+    <h3>Chemical Peel</h3>
+	<h5>Price: 231</h5>
+  </div><br><br>
+
+<button class="accordion-item"><strong><b>Manicure & Pedicure</b></strong></button>
+  <div class="accordion-content"><br>
+    <h3>Basic Manicure/Pedicure</h3>
+	<h5>Price: 1,100</h5>
+    <h3>French Manicure/Pedicure</h3>
+	<h5>Price: 999</h5>
+    <h3>Gel Manicure/Pedicure</h3>
+	<h5>Price: 1,349</h5>
+    <h3>Acrylic Nails</h3>
+	<h5>Price: 399</h5>
+    <h3>Dip Powder Manicure/Pedicure</h3>
+	<h5>Price: </h5>
+    <h3>Spa Manicure/Pedicure</h3>
+	<h5>Price: 2,200</h5>
+    <h3>Paraffin Treatment</h3>
+	<h5>Price: 599</h5>
+  </div><br><br>
+
+<button class="accordion-item"><strong><b>Skincare Consultations</b></strong></button>
+  <div class="accordion-content"><br>
+    <h3>Skin Assessment</h3>
+	<h5>Price: 15,000</h5>
+    <h3>Review of Current Skincare Routine</h3>
+	<h5>Price: 500</h5>
+    <h3>Product Recommendations</h3>
+	<h5>Price: </h5>
+    <h3>Treatment Recommendations</h3>
+	<h5>Price: 599</h5>
+    <h3>Customized Skincare Plan</h3>
+	<h5>Price: 599</h5>
+    <h3>Education and Advice</h3>
+	<h5>Price: 599</h5>
+    <h3>Follow-Up and Monitoring</h3>
+	<h5>Price: 599</h5>
+  </div><br><br>
+
+  <!-- Add more sections as needed -->
+</div>
+<br><br><br><br><br><br><br><br><br>
+
+<footer>
+    <p>&copy; 2024 Cosmetology Website. All rights reserved.</p>
+</footer>
+
+</BODY>
+</HTML>

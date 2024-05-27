@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetology Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#search-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#search-results {
+    margin-top: 20px;
+}
+
+</style>
+<style>
+/* Basic CSS for styling the website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 50px;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+</style>
+<script>
+let slideIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelectorAll('.slider img');
+  if (index < 0) {
+    slideIndex = slides.length - 1;
+  } else if (index >= slides.length) {
+    slideIndex = 0;
+  }
+  const offset = -slideIndex * 100;
+  document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+}
+
+function prevSlide() {
+  showSlide(--slideIndex);
+}
+
+function nextSlide() {
+  showSlide(++slideIndex);
+}
+
+showSlide(slideIndex);
+
+</script>
+
+<body bgcolor="mistyrose">
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </div>
+    <div id="search-results">
+        <!-- Search results will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<body>
+    <header>
+	<h1><b><font size="20%">PureGlow</font size></h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service%20page.HTML">Services</a></li>
+                <li><a href="Aboutpage.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+<center>
+        <h1><b><font size="5px">Welcome to our Cosmetology Website</font size></b></h1>
+        <p>Discover the best beauty services in town!</p>
+</center>
+    </section>
+<br><br>
+
+<center>
+<div class="slider-container">
+  <div class="slider">
+    <img src="cosmetology.jpg">
+    <img src="cosmetology image.jpeg">
+    <img src="Best-Cosmetology.jpeg">
+    <img src="Cosmetology (1).jpg">
+</center>
+  </div>
+  <button class="prev" onclick="prevSlide()">❮</button>
+  <button class="next" onclick="nextSlide()">❯</button>
+</div><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Cosmetology Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
